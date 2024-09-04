@@ -12,10 +12,10 @@
 
 &emsp; O chatbot tem a seguinte persona que foi utilizada para identificar o problema a ser resolvido:
 
-![Persona](path/to/your/persona/image.png)
+![Persona](D2/Persona.png)
 
 ## Diagrama de Sequência
 
 O diagrama de sequência abaixo ilustra o fluxo de interação entre o usuário e o chatbot:
 
-![Diagrama de Sequência](path/to/your/sequence/diagram.png)
+![Diagrama de Sequência](D2/Sequence_diagram.png)
