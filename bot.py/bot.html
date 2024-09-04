@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Simples</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Este é um exemplo básico de uma página HTML.</p>
+</body>
+</html>
+
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "a75ec3df-5c77-482d-9b75-38e38e0e95af", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "8c617651-dc12-423c-be4e-d8fc8a12ceb8", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
