@@ -1,6 +1,6 @@
 # ponderada_sala_s5
 
-# Chatbot IBM
+# Chatbot
 
 &emsp; Este projeto é um chatbot desenvolvido usando a IBM Watson Assistant. O objetivo é fornecer um assistente virtual capaz de responder a perguntas frequentes e oferecer suporte de maneira eficiente.
 
