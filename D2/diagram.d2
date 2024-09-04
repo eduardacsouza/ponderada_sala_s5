@@ -1,0 +1,21 @@
+shape: sequence_diagram
+
+user: Usuário
+front: Frontend
+bot: IBM - Chatbot
+aws: AWS S3
+
+aws -> front: Enviar arquivos para build
+user.consulta -> front: Envia consulta (ex: "Mostrar partidas do Time X em 2020")
+front.front_consulta -> bot: Encaminha consulta
+bot.process -> bot.process: Processa dados da consulta
+bot -> aws: Armazena dados de atividade do usuário
+bot -> front.front_consulta: Retorna dados processados
+front -> user.consulta: Exibe os dados ao usuário
+
+user.partida -> front: Solicita detalhes de uma partida
+front.front_consulta2 -> bot: Encaminha solicitação
+bot.process2 -> bot.process2: Processa detalhes da partida
+bot -> aws: Armazena dados de atividade do usuário
+bot -> front.front_consulta2: Retorna detalhes ao frontend
+front -> user.partida: Mostra detalhes da partida
