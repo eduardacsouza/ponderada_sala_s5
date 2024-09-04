@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Simples</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <h1>Olá, Mundo!</h1>
     <p>Este é um exemplo básico de uma página HTML.</p>
-    <img src="https://ponderada-m7.s3.us-east-1.amazonaws.com/soccer-legend-pele.webp?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEML%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIGmTgrqEedGN3LYHFyECCQWWsSPRPc26IZbUN738KKYAAiA88Wvz9bsUYQyuEvR5aEY11FRrw1z6o2C7o%2FkM6x3MAyr1Agjb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAEaDDQwNTc2NzUzNTA1MyIMmiRCYozNy%2BE80JEaKskCHm7VobEerLp5slGsR%2FbAi%2FLKIl8UjehRlB88ojteuTovy6xQ3Y6Co2XXeeYlCPS1CxXa8Y6VvVT0X5lBqZHWFIFZJz9RyxMDJuWbcw3kEdv1Vr4uaGzwrY5%2FpmLB2wGPhLlnBVu32B4ur4QFeGLNDHeGDa9Io1%2BQ1MoKoBnT8rxyGwavfD69KMK3uuncGv23unHz4bgpyNIrs5YnAOqVjwIoaWSoK1AqcfOjOUpK3j1Nyf87TtTze4VAFXLnGI9%2FaaDtseTqnXt3tl3286XkBS6tlrwA6cBTjmaIU9n8tLj8aRnDipzfw8r1MVbi4WgK9Qx88vmf6BB5uJYSlEKCLdKaSh6aPC5eaMtAWaZZBU2zv7VpcwuDkbqc%2FD6QYMS8049o11M97wdmHAGV05DLTmftc6zF0i%2FsUK1KrlmHSNHuAKlE%2FBB1rpsw0rbitgY6iAIeGlO1wpn4fyAJULBTMrtpBmTlvyy7xyVI4yY3vdRdoNehQhzW6hpKx8J2EmqEtGuzDFwWDIKy6U3otJKhYamudihNk0MTGz2og3MCanTTBXnKOG5vJG4LSAc6AYllndQ5CY7zDOCRv4PGZ6YzOc%2BS3Q%2FuNiKUdYnv8yW4eYNvW%2Bdf8ip7JiUi8xT98rJOT3vgGHXIppJg7FuCYYMiR6IwfjgCAdXM84Jb2VIgta2VpAZxjii2w%2Fcajz8USiWYfrLGwG3nov%2BdU1U70vx6xyTQQmLeqAzUPVdyKu9e3Iks3i%2FjrrnjHDaTge6nBiml9d6GJSJl1zNBPT0wofo%2BDzcPcBYAaNrCmkM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240904T181006Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAV46NBHHGUSSRJIXL%2F20240904%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fb40884909ce87103ec7535a3e2852956f7b010f836c737985b03478762f3efe" />
+    <img src="https://ponderada-m7.s3.us-east-1.amazonaws.com/soccer-legend-pele.webp?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEML%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIGmTgrqEedGN3LYHFyECCQWWsSPRPc26IZbUN738KKYAAiA88Wvz9bsUYQyuEvR5aEY11FRrw1z6o2C7o%2FkM6x3MAyr1Agjb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAEaDDQwNTc2NzUzNTA1MyIMmiRCYozNy%2BE80JEaKskCHm7VobEerLp5slGsR%2FbAi%2FLKIl8UjehRlB88ojteuTovy6xQ3Y6Co2XXeeYlCPS1CxXa8Y6VvVT0X5lBqZHWFIFZJz9RyxMDJuWbcw3kEdv1Vr4uaGzwrY5%2FpmLB2wGPhLlnBVu32B4ur4QFeGLNDHeGDa9Io1%2BQ1MoKoBnT8rxyGwavfD69KMK3uuncGv23unHz4bgpyNIrs5YnAOqVjwIoaWSoK1AqcfOjOUpK3j1Nyf87TtTze4VAFXLnGI9%2FaaDtseTqnXt3tl3286XkBS6tlrwA6cBTjmaIU9n8tLj8aRnDipzfw8r1MVbi4WgK9Qx88vmf6BB5uJYSlEKCLdKaSh6aPC5eaMtAWaZZBU2zv7VpcwuDkbqc%2FD6QYMS8049o11M97wdmHAGV05DLTmftc6zF0i%2FsUK1KrlmHSNHuAKlE%2FBB1rpsw0rbitgY6iAIeGlO1wpn4fyAJULBTMrtpBmTlvyy7xyVI4yY3vdRdoNehQhzW6hpKx8J2EmqEtGuzDFwWDIKy6U3otJKhYamudihNk0MTGz2og3MCanTTBXnKOG5vJG4LSAc6AYllndQ5CY7zDOCRv4PGZ6YzOc%2BS3Q%2FuNiKUdYnv8yW4eYNvW%2Bdf8ip7JiUi8xT98rJOT3vgGHXIppJg7FuCYYMiR6IwfjgCAdXM84Jb2VIgta2VpAZxjii2w%2Fcajz8USiWYfrLGwG3nov%2BdU1U70vx6xyTQQmLeqAzUPVdyKu9e3Iks3i%2FjrrnjHDaTge6nBiml9d6GJSJl1zNBPT0wofo%2BDzcPcBYAaNrCmkM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240904T181006Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAV46NBHHGUSSRJIXL%2F20240904%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fb40884909ce87103ec7535a3e2852956f7b010f836c737985b03478762f3efe" alt="Imagem" />
 </body>
 </html>
-
-<script>
-    window.watsonAssistantChatOptions = {
-      integrationID: "a75ec3df-5c77-482d-9b75-38e38e0e95af", // The ID of this integration.
-      region: "us-south", // The region your integration is hosted in.
-      serviceInstanceID: "8c617651-dc12-423c-be4e-d8fc8a12ceb8", // The ID of your service instance.
-      onLoad: async (instance) => { await instance.render(); }
-    };
-    setTimeout(function(){
-      const t=document.createElement('script');
-      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-      document.head.appendChild(t);
-    });
-  </script>
